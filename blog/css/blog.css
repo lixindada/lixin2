@@ -1,0 +1,98 @@
+.content-left{
+	margin-top:120px;
+}
+.content-left a{
+	text-decoration: none;
+	color: #19A9D5;
+	font-size:12px;
+}
+.content-left .caption{
+	padding-left:18px;
+}
+.content-left p{
+	color:#98A6AD;
+	font-size:12px;
+}
+.content-left .btn-red{
+	background:#F26722;
+	color: #fff;
+}
+.content-left .btn-red i{
+	margin-right:5px;
+}
+.content-left .btn-red:hover{
+	background:#E26020;
+}
+.content-left p span{
+	padding:0 3px 0 8px;
+}
+.content-left p span:nth-of-type(1){
+	padding:0 3px 0 0;
+}
+.content-left h3{
+	font-size: 20px;
+	line-height: 30px;
+	height:90px;
+	margin-top:0;
+}
+.content-left .thumbnail{
+	border-radius:0;
+	padding: 0;
+}
+.content-left .col-sm-6{
+	padding:0 10px;
+}
+.content-left .thumbnail h3 a{
+	font-size:22px;
+	color: #363F44;
+}
+.content-left .form-jion{
+	background:#1C2B36;
+	border-radius:2px;
+}
+.content-left .form-jion p{
+	width: 90%;
+	font-size:16px;
+}
+.content-left .form-jion p:first-of-type{
+	color: #fff;
+	margin:20px auto 8px auto;
+}
+.content-left .form-jion p:last-of-type{
+	color: #7793A7;
+	font-size:14px;
+	margin:0 auto 10px auto;
+}
+.content-left .form-jion input,.content-left .form-jion button{
+	width: 90%;
+	margin:0 auto;
+	border-radius:2px;
+	font-size:12px;
+	margin-bottom: 10px;
+}
+.content-left .form-jion button{
+	margin-bottom:14px;
+}
+.content-left ul li:first-of-type{
+	height:40px;
+	line-height: 40px;
+}
+.content-left ul li{
+	height:50px;
+	line-height:50px;
+	padding-top:0;
+	padding-bottom:0;
+	font-size: 12px;
+	color: #363F44;
+}
+.content-left ul li span{
+	margin-right:10px;
+	color: #6C747B;
+}
+.content-left ul li h3{
+	color:#58666E;
+	font-size: 12px;
+	height:40px;
+	line-height: 40px;
+	margin: 0;
+}

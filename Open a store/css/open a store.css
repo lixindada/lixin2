@@ -1,0 +1,30 @@
+/*banner start*/
+.banner{background:url(../img/desk-bg.jpg) repeat-x center center;}
+.jum_1 h1{font-size: 26px;padding:75px 0 44px 0; color: #fff; text-shadow: 0px 0px 5px rgba(0, 0, 5, 0.7); font-weight: 100; font-weight: normal;}
+.jum_1 h3{font-size: 24px;padding-bottom:86px;}
+.btn-zhi{border-radius:2px; background: #26C14B;}
+.btn-zhi:hover{background: #22AC43;}
+.text-write{color:#fff;}
+/*banner end*/
+/*main start*/
+.bg-write{background: #fff;}
+.m-t{margin-top: 40px;}
+.m-b{margin-bottom: 50px;}
+.w-100{width: 100%;}
+.list-num h3{font-size: 22px;font-weight:bold; color: #3A3F51; padding-bottom:15px;}
+.list-num ul{padding-left:0;}
+.list-num ul li{list-style: none; color: #58666E; font-size: 16px; line-height: 26px;}
+.list-num ul li strong{margin-right: 4px;}
+/*main end*/
+/*content start*/
+.content-light .text-light h3,.content_1 h3,.content_2 h3{font-size: 22px;font-weight:bold; color: #3A3F51; padding-bottom:15px;}
+.content-light .text-light ul li{color:#78666E; line-height: 40px; font-size: 16px;}
+.content-light .text-light ul li i{margin-right: 10px; color: #A8C651;}
+/*content end*/
+/*content_1 start*/
+.content_1 p{color: #98A6AD;}
+.content_1 p i{color: #98A6AD; font-size: 100px;}
+/*content_1 end*/
+
+.btn-green{background: #27c24c; border-radius:2px; width: 320px;}
+.btn-green:hover{background: #23AD44;}

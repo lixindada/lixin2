@@ -1,0 +1,26 @@
+/*banner start*/
+.banner{background:url(../img/money-bg.jpg) repeat-x center center;}
+.jum_1 h1{font-size: 36px;padding:72px 0 16px 0; font-family:"宋体"; animation:4s .8s fadeInDown;}
+.jum_1 h3{font-size: 24px;padding:10px 0 52px 0; animation:4s .8s fadeInUp;}
+.text-write{color:#fff !important;}
+.w-100{width: 100%;}
+.m-t{margin-top: 40px;}
+.m-t-50{padding-top:50px;}
+.m-b{margin-bottom:50px;}
+.bg-write{background:#fff;}
+.p-t-r-l{padding:20px 15px 0 15px;}
+/*banner end*/
+.contenr-1 .img-content{padding:20px 15px 0 15px;}
+.contenr-1 .list-text h3,.content-light>div>div:nth-of-type(1) h3,.content_1>div>div:nth-of-type(2) h3,.content_2 h3,.content_3 h3{color:#3A3F51; font-weight: bold; font-size: 22px;}
+.contenr-1 .list-text p{color: #58666E; font-size: 16px; line-height: 24px; padding-top: 20px; width: 90%;}
+/*main start*/
+.content-light>div>div:nth-of-type(2){padding:20px 15px 0 15px;}
+.content-light>div>div:nth-of-type(1) p{font-size: 10px; padding: 20px 0 0 0; color: #78666E;}
+.content-light>div>div:nth-of-type(2) i{color: #98A6AD; font-size: 200px; transform:rotate(45deg);}
+/*main end*/
+/*content start*/
+.content_1>div>div:nth-of-type(1){padding-top:40px;}
+.content_1>div>div:nth-of-type(2) p{width:94%; color: #657279;padding-top: 20px; font-size:16px;}
+.content_2 p,.content_3 p{color: #657279; font-size:16px; line-height: 24px; padding:20px 0;}
+.content_2 a,.content_3 a{border-radius:2px;}
+/*content end*/

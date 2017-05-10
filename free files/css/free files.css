@@ -1,0 +1,21 @@
+/*banner start*/
+.banner{background:url(../images/img_03.jpg) repeat-x center center;}
+.jum_1 h1{font-size: 36px;padding:18px 0 16px 0;}
+.jum_1 h3{font-size: 24px;padding-bottom:36px;}
+.my-time span{font-size: 20px; color: #fff; background: #2e2e2e; padding: 5px; text-spacing:6px; margin-right: 10px;}
+.text-write{color:#fff !important;}
+.my-time-bz{ margin-top: 10px;}
+.my-time-bz span{color: #FFFFFF; font-size: 10px; margin-right: 4px;}
+/*banner end*/
+/*main start*/
+.row_animation{margin: 32px 0 0px 0;}
+.row_animation>div figure{margin-bottom: 20;}
+/*main end*/
+/*content start*/
+.content h3{color: #58669B; font-size: 24px; margin:34px 0 20px 0;}
+.text-content a:first-of-type{margin-right: 13px;}
+.text-content a i{margin-right: 10px;}
+.blue{background:#3A5898;}
+.blue:hover{background: #35508B;}
+.input_content{margin:10px 0 42px 0;}
+/*content end*/

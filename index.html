@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--让IE按照版本渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动设备优先-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Buy & Sell PHP Scripts, App Templates, Plugins, Themes, Templates and more</title>
+    <link href="img/favicon.ico" rel="SHORTCUT ICON" />
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<style type="text/css">
+		body{background:#EDF1F2; overflow-x: hidden;}
+		/*****************************************mainMenu start*****************************************/
+		.mainMenu{background:#1C2B36; animation: .8s fadeInUp;-moz-animation: .8s fadeInUp;-webkit-animation: .8s fadeInUp;-o-animation: .8s fadeInUp;}
+		.mainMenu .navbar-brand{color: #fff;}
+		.mainMenuNav li a{color: #869FB1;}
+		.mainMenuNav li a:hover{color: #fff; background:#16232D;}
+		.nav_img img{display:block; max-width: 128px; padding-left: 20px;}
+		.mainMenuNav{padding-left: 50px;}
+		/*logo start*/
+		.a_write{color: #fff;}
+		.a_write:hover{color:#fff;}
+		/*logo end*/
+		
+		.navbar_1 li a{color:#141719 !important;}
+		/*****************************************mainMenu end*****************************************/
+		/*****************************************subMenu start*****************************************/
+		.subMenu{margin-top:50px; background:#FFFFFF; animation: .8s .8s fadeInUp forwards;-o-animation: .8s .8s fadeInUp forwards;-webkit-animation: .8s .8s fadeInUp forwards;-moz-animation: .8s .8s fadeInUp forwards;opacity:0;}
+		.subMenu .dropdown-menu{animation: 0.6s fadeInRight;-o-animation: 0.6s fadeInRight;-webkit-animation: 0.6s fadeInRight;-moz-animation: 0.6s fadeInRight;}
+		.ul2{max-height: 300px; overflow-y:auto;}
+		.inp_sub{background: #EDF1F2; border: 0; border-radius: 0; width: 140px !important;}
+		.btn-sub{border:3px solid #EDF1F2; background:#EDF1F2;display: block;}
+		.btn-sub:hover{background: #EDF1F2; border: 3px solid #EDF1F2;}
+		.btn_sub:hover{background: #EDF1F2;}
+		.btn_0{background:#1C2B36;border:0;color: #58666E;margin: 10px 10px;}
+		.btn_2{margin-right: 15px;}
+		.btn_4{height: 45px; background: #EDF1F2;border-left:3px solid #FFFFFF;width:50px;border: 0; box-shadow: none;}
+		.btn_4 i{color: #333333;}
+		.btn_4:hover i{color:#000000; font-weight: bold;}
+		.btn_5,.btn_6{margin:0px 8px;height:45px;line-height:32px;background:#27C24C;border: 0; font-size: 16px;font-weight: normal;}
+		.btn_6{background: transparent; border:1px solid #fff;}
+		.btn_6:hover{background: transparent; border:1px solid #2BAADF; color: #2BAADF;}
+		.btn-355{background:#3A5898; width:330px; height:45px; margin:10px auto; padding:12px 0 0 0; display:block; font-size: 16px;}
+		.borno{border:none;}
+		.btn-355 i{padding-right: 10px; font-size: 18px;}
+		.btn-355:hover{background:#35508B;}
+		.bedf{background:#EDF1F2}
+		.text_1{color: #fff; text-shadow: 0px 0px 5px #333333; font-size:28px; line-height:30px; margin-bottom: 30px;}
+		.inp_1{background:rgba(255,255,255,0.5); height: 45px; line-height: 45px;border: 0; font-size: 16px;}
+		.inp_group-1{ margin-bottom: 50px;}
+		.meun_write{background:#FEFEFE !important; animation:.8s rotateInUpLeft forwards;-webkit-animation:.8s rotateInUpLeft forwards;-moz-animation:.8s rotateInUpLeft forwards;-o-animation:.8s rotateInUpLeft forwards; opacity:0;}
+		/*****************************************subMenu end*****************************************/
+		/*****************************************banner start*****************************************/
+		.banner{margin: 100px 0 0 0; background: url(img/search-bg.jpg) no-repeat; background-size:100% 100%; animation:.8s 1.6s rotateIn forwards;-o-animation:.8s 1.6s rotateIn forwards;-moz-animation:.8s 1.6s rotateIn forwards;-webkit-animation:.8s 1.6s rotateIn forwards; opacity:0;}
+		/*****************************************banner end*****************************************/
+		/*****************************************title start*****************************************/
+		.title{background: #DDE6E9; animation:.8s 2.4s rotateInDownLeft forwards;-webkit-animation:.8s 2.4s rotateInDownLeft forwards;-moz-animation:.8s 2.4s rotateInDownLeft forwards;-o-animation:.8s 2.4s rotateInDownLeft forwards; opacity:0;}
+		.title h3{line-height:60px;color: #58666E;}
+		.title h3 a{color: #19A9D5; font-weight: bold;}
+		.title h3 a:hover{color: #1797BE;text-decoration: none;}
+		/*****************************************title end*****************************************/
+		/*****************************************list start*****************************************/
+		.list dt{width: 40px; margin-top: 10px;}
+		.list dt img{width: 100%;}
+		.list dd{margin-left: 50px;}
+		@media screen and (max-width: 768px) {
+			.list dt,.list dd{float: left;}
+			.banner{margin-top:51px;}
+		}
+		/*****************************************list end*****************************************/
+		/*figure start*/
+		.fig dl dd h5{font-weight: bold; padding-left: 20px;}
+		.fig dl dt{width:60px;}
+		.fig a{color: #58666E;}
+		.fig div:nth-of-type(1)>p:nth-last-of-type(2){margin-bottom:30px;}
+		.fig div:nth-of-type(1)>p:nth-last-of-type(1){background: url(img/star-off.png) repeat-x center center; width: 84px; height: 30px; margin-right: 10px;}
+
+		.fig div:nth-of-type(2) p:nth-of-type(1) img{width: 20px;}
+		.fig div:nth-of-type(2) p:nth-of-type(1){padding-top: 10px; color: #B8A8B4;padding-left: 5px;}
+		.fig div:nth-of-type(2) p:nth-of-type(1) a{text-decoration: none; font-size: 10px; padding-left: 8px;}
+		.fig div:nth-of-type(2) p:nth-of-type(1) a:hover{color:#000;}
+		.fig div:nth-of-type(2) p:nth-of-type(2){margin-right: 5px; font-size: 10px; background:#27C24C; border: 1px solid #27C24C;}
+		.fig div:nth-of-type(2) p:nth-of-type(2):hover{border:1px solid #20A03F; background:#23AD44;}
+		/*figure end*/
+		/*content start*/
+		.contenr2 h4{padding-top: 20px; font-weight:100; color: #58666E; font-size: 20px;}
+		.contenr2 h4 a{font-size: 10px; text-decoration: none; color: #333;}
+		.contenr2 h4 a:hover{color: #000;}
+			/*main start*/
+			.h4_animation{ animation:.8s 3.2s fadeInRight forwards;-webkit-animation:.8s 3.2s fadeInRight forwards;-moz-animation:.8s 3.2s fadeInRight forwards;-o-animation:.8s 3.2s fadeInRight forwards; opacity:0;}
+			.row_animation{ animation:.8s 3.2s fadeInUp forwards;-moz-animation:.8s 3.2s fadeInUp forwards;-o-animation:.8s 3.2s fadeInUp forwards;-webkit-animation:.8s 3.2s fadeInUp forwards; opacity:0;}
+			.panel_1 h5{height: 10px;line-height: 10px;white-space: nowrap;  text-overflow: ellipsis;  overflow: hidden; font-weight: bold; font-size: 14px;}
+			.panel_1>img{width:60px; display: block; margin:15px 10px 0px 10px;}
+			.panel_1 .div_img a span{font-size: 10px; margin:0px 0 0 6px; display: inline-block;}
+			.panel_1 .div_img a:hover{color: #000000;}
+			.panel_1 .div_img a img{width:16px;}
+			.panel_1 .div_img p{width: 83px; background: url(img/star-off.png) repeat-x center center; height: 30px;}
+			.panel_1 .text-29{font-size: 10px;color:#58666E;font-weight:bold;margin:26px 3px 0 0;}
+			/*2*/
+			.panel_sc{overflow: hidden;}
+			.panel_sc:hover .img_sc img{transform: scale(1.05);transition:1s;}
+			.img_sc img{width: 100%;}
+			.panel_sc h2 a{text-decoration: none; font-size:22px;color: #333;}
+			.panel_sc h2{margin-top:6px;margin-bottom:40px;}
+			.panel_sc .time_1{color: #98A8B2; font-size: 10px;}
+			/*main end*/
+		/*content end*/
+		/*footer start*/
+		.text-write{color: #fff;}
+		.footer1{background:#1C2B36; padding: 40px 0 40px 0;}
+		.footer1 .div_1{padding-top: 20px;}
+		.footer a{text-decoration: none;}
+		.footer ul li a{color: #798D9B; font-size: 10px;}
+		.footer ul li a:hover{color: #fff;}
+		.footer2{background:#263845;line-height: 80px;}
+		.footer2 ul li{padding:0 5px;}
+		.footer2 .div_2{color:#798D9B; font-size: 10px;}
+		@media screen and (max-width: 1000px){
+			.footer2{line-height:20px;padding:30px 0;}
+		}
+		/*footer end*/
+		
+		/*login start*/
+		.modal-body{width:330px; margin:0 auto;}
+		.modal-body form p{color: #58666E; font-size: 12px; text-align: center;}
+		.modal-content{width:330px;}
+		.modal-content input{border:1px solid #E7ECEE; border-radius:5px; padding-left:14px; height:52px; color:#B299A5; outline:none; width:100%;}
+		.modal-content input:active{border: 1px solid #23B7E5;}
+		.modal-body form .list-group-item{padding:10px 0;}
+		.modal-body .row input{height:30px;}
+		.modal-footer{width:330px; margin:0 auto; text-align: center; color:#B07B6E; font-size:10px;}
+		.modal-footer a{text-decoration:none; width:100%;}
+		/*login end*/
+	</style>
+</head>
+<body>
+	<!--header start-->
+	<header>
+		<!--mainMenu start-->
+		<nav class="navbar mainMenu navbar-fixed-top">
+			<div class="container">
+				<!--logo start-->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand m-r-n m-l-n-md nav_img"><img src="img/logo-dark.png"/></a>
+					<button class="bth btn-default navbar-btn visible-xs pull-right btn_0" data-toggle="collapse" data-target="#nav"> 					<!--data-toggle="collapse" data-target="#nav"-->
+						<!--<i class="glyphicon glyphicon-th-list"></i>-->
+						<i class="glyphicon glyphicon-list"></i>
+					</button>
+				</div>
+				<!--logo end-->
+				<!--mainMenuNav start-->
+				<ul class="nav navbar-nav mainMenuNav hidden-xs">
+					<li><a href="free files/free files.html">Free Files</a></li>
+					<li><a href="Open a store/open a store.html">Open a store</a></li>
+					<li><a href="Become an affiliate/Become an affiliate.html">Become an affiliate</a></li>
+					<li><a href="">Forum</a></li>
+					<li><a href="blog/blog.html">Blog</a></li>
+				</ul>
+				<!--mainMenuNav end-->
+				
+				<!--collapse start-->
+				<ul class="nav navbar-nav collapse ul2 hidden-sm hidden-md hidden-lg" id="nav">
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Themes <i class="caret"></i></a>
+						<ul class="dropdown-menu meun_write">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Themes <i class="caret"></i></a>
+						<ul class="dropdown-menu meun_write">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Themes <i class="caret"></i></a>
+						<ul class="dropdown-menu meun_write">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Themes <i class="caret"></i></a>
+						<ul class="dropdown-menu meun_write">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Themes <i class="caret"></i></a>
+						<ul class="dropdown-menu meun_write">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Themes <i class="caret"></i></a>
+						<ul class="dropdown-menu meun_write">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<button class="btn btn-success navbar-btn btn-sm">Sig up</button>
+				</ul>
+				<!--collapse end-->
+				
+				<!--login start-->
+				<div class="pull-right hidden-xs visible-md visible-lg">
+					<a href="" class="btn btn-success navbar-btn btn-sm pull-right btn_2" data-toggle="modal" data-target="#aModal">Sign up</a>
+					<!--模态框的声明层-->
+						<div class="modal fade" id="aModal" tabindex="-1"> <!--按Esc就关闭-->
+							<!--窗口声明层-->
+							<div class="modal-dialog">
+								<!--内容声明层-->
+								<div class="modal-content" style="width:600px; background:#EDF1F2">
+									<div class="modal-header borno">
+										<i class="close" data-dismiss="modal">&times;</i>
+										<a href="" style="display: block; width:156px; margin:20px auto;"><img src="img/logo.png" width="156" height="27"/></a>
+										<p class="text-center" style="font-size:22px; color:#58666E;">Create your account</p>
+										<a href="" class="btn btn-danger btn-355"><i class="fa fa-facebook-square"></i>Sign up with Facebook</a>
+									</div>
+									<div class="modal-body modal-lg borno">
+										<form>
+											<p>Or by using the registration form</p>
+											<div class="row">
+												<div class="col-md-6">
+													<input type="text" id="" value="" placeholder="First name" />
+												</div>
+												<div class="col-md-6">
+													<input type="text" id="" value="" placeholder="Last name" />
+												</div>
+											</div>
+											<div class="list-group">
+												<div class="list-group-item borno bedf">
+													<input type="text" id="" value="" placeholder="Username" />
+												</div>
+												<div class="list-group-item borno bedf">
+													<input type="email" id="" value="" placeholder="Email" />
+												</div>
+												<div class="list-group-item borno bedf">
+													<input type="password" id="" value="" placeholder="Password" />
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer borno">
+										<p>By signing up to Codester you confirm that you agree with the <a href="">member terms and conditions</a></p>
+										<a href="" class="btn btn-info">Create my free account</a>
+										<a href="">Do you already have an account?</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--模态框结束-->
+					<a href="" class="btn btn-sm navbar-btn pull-right a_write">Log in</a>
+				</div>
+				<!--login end-->
+			</div>
+		</nav>
+		<!--mainMenu end-->
+		
+		<!--subMenu start-->
+		<nav class="subMenu navbar navbar-fixed-top hidden-xs" style="z-index: 1 !important;"> <!--collapse id="nav"-->
+			<div class="container">
+				<!--subMenuNav start-->
+				<ul class="nav navbar-nav navbar_1">
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle small">Scripts & Code<i class="caret"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href=""><i class="glyphicon glyphicon-fire">Most Popular</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">PHP Scripts</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle small">App Templates<i class="caret"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle small">Themes<i class="caret"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle">Plugins<i class="caret"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" data-toggle="dropdown" class="dropdown-toggle small">Graphics<i class="caret"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li class="divider"></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+							<li><a href=""><i class="glyphicon glyphicon-fire">coasfasfa</i></a></li>
+						</ul>
+					</li>
+				</ul>
+				<!--subMenuNav end-->
+				<!--search start-->
+				<form action="" class="navbar-form pull-right hidden-sm">
+					<div class="input-group">
+						<input type="search" value="" class="form-control inp_sub" placeholder="Search... "/>
+						<div class="input-group-btn btn_sub">
+							<button class="btn btn-default btn-sm btn-sub">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+				<!--search end-->
+			</div>
+		</nav>
+		<!--subMenu end-->
+	</header>
+	<!--header end-->
+	
+	<!--banner start-->
+	<section class="jumbotron banner text-center">
+		<section class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="text-center center-block text_1">Buy premium <strong>PHP scripts, app templates, themes and plugins</strong> and create amazing websites & apps.</h2>
+					<form action="">
+						<div class="input-group inp_group-1">
+							<input type="search" class="form-control inp_1" placeholder="for example 'social networking script'" />
+							<div class="input-group-btn btn_3">
+								<button class="btn btn-default pull-left btn_4" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<a href="" class="btn btn-success btn_5">Create a free account</a>
+					<a href="" class="btn btn-success btn_6">Browse new items</a>
+					<a href="" class="btn btn-success btn_6">Sell your work</a>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!--banner end-->
+	
+	<!--title start-->
+	<section class="container-fluid title">
+		<h3 class="text-center"><a href="#">Create an account</a>  today and <strong>Download 4 Free Files</strong> every Week</h3>
+	</section>
+	<!--title end-->
+	
+	<!--main start-->
+	<main class="container contenr2">
+		<h4 class="h4_animation">Free Files of the Week<a href="" class="pull-right">Browse Free Files</a></h4>
+		<div class="row row_animation">
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small.jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (46).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (11).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (7).png"/></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-camera btn-sm pull-left" title="live preview" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (14).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (35).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-camera btn-sm pull-left" title="live preview" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (13).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (42).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-camera btn-sm pull-left" title="live preview" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<h4>Free Files of the Week<a href="" class="pull-right">Browse Free Files</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (19).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (10).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (18).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (11).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (17).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (12).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (16).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (13).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<h4>Free Files of the Week<a href="" class="pull-right">Browse Free Files</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (15).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (14).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (14).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (15).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (13).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (16).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (12).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (17).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<h4>Free Files of the Week<a href="" class="pull-right">Browse Free Files</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (11).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (18).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (10).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (19).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (9).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (20).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (8).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (21).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<h4>Free Files of the Week<a href="" class="pull-right">Browse Free Files</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (7).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (22).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (6).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (23).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (5).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (24).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<figure class="thumbnail">
+					<img src="img/preview-small (4).jpg"/>
+					<figcaption class="fig clearfix">
+						<dl class="dl-horizontal list clearfix">
+							<dt><img src="img/icon-small (25).png" /></dt>
+							<dd><h5>Crazy Wheel 2D - Unity Game Source Code</h5></dd>
+						</dl>
+						<p>A complete multi platform tap to match one-touch arcade game.</p>
+						<div class="clearfix">
+							<a href="" class="btn btn-default glyphicon glyphicon-facetime-video btn-sm pull-left" title="Video" data-toggle="tooltip" data-placement="top"><span class="pull-right btn-block" style="background: url(img/star-off.png);"></span></a>
+							<p class="p1 pull-right"></p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left"><img src="img/icon.png"/><a href="">Unity</a></p>
+							<p class="m-b-sm m-r-sm m-t-sm pull-right font-bold  text-lg btn btn-danger"><del>$9</del>  Free Download</p>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<h4>Popular Items<a href="" class="pull-right">Browse Popular Items</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/img1.png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (10).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (11).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (12).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (13).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (14).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (15).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (16).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (17).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (18).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (19).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (20).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (21).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (22).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (23).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (24).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<h4>New Releases<a href="" class="pull-right">Browse New Items</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (25).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (26).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (27).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (27).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (28).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (29).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (30).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (31).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (32).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (33).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (34).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (35).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (36).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/img.png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (37).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (2).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (38).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (3).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel clearfix panel_1">
+					<img src="img/icon-small (39).png"/ class="pull-left img-rounded">
+					<div class="clearfix div_width ellipsis">
+						<div>
+							<h5>Facebook Clone In Ionic And Firebase</h5>
+						</div>
+						<div class="clearfix pull-left div_img">
+							<a href="#"><img src="img/icon (1).png"/ class="pull-left"><span class="pull-left">Ionic</span></a><br />
+							<p></p>
+						</div>			
+						<div class="pull-right text-29">$29</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		<h4>From Our Blog<a href="" class="pull-right">Visit Our Blog</a></h4>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="panel panel_sc">
+					<div class="img_sc">
+						<a href=""><img src="img/freefiles.jpg"/></a>
+					</div>
+					<div class="panel-body">
+						<div>Site news</div>
+						<h2 class="h3"><a href="">Moving To 4 Free Files Of The Week</a></h2>
+						<div class="time_1">
+							<p><i class="glyphicon glyphicon-time"></i>4 January 2017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel panel_sc">
+					<div class="img_sc">
+						<a href=""><img src="img/badges.jpg"/></a>
+					</div>
+					<div class="panel-body">
+						<div>Site news</div>
+						<h2 class="h3"><a href="">Moving To 4 Free Files Of The Week</a></h2>
+						<div class="time_1">
+							<p><i class="glyphicon glyphicon-time"></i>4 January 2017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel panel_sc">
+					<div class="img_sc">
+						<a href=""><img src="img/forumupdate.jpg"></a>
+					</div>
+					<div class="panel-body">
+						<div>Site news</div>
+						<h2 class="h3"><a href="">Moving To 4 Free Files Of The Week</a></h2>
+						<div class="time_1">
+							<p><i class="glyphicon glyphicon-time"></i>4 January 2017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="panel panel_sc">
+					<div class="img_sc">
+						<a href=""><img src="img/summeruploadcontestwinners.jpg"></a>
+					</div>
+					<div class="panel-body">
+						<div>Site news</div>
+						<h2 class="h3"><a href="">Moving To 4 Free Files Of The Week</a></h2>
+						<div class="time_1">
+							<p><i class="glyphicon glyphicon-time"></i>4 January 2017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--main end-->
+	
+	<!--footer start-->
+	<footer class="footer">
+		<div class="footer1 container-fluid">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<h5 class="text-write text-thin"><strong>Follow</strong> us</h5>
+						<div class="div_1">
+							<a href="" class="btn btn-primary">
+								<i class="">F</i>
+							</a>
+							<a href="" class="btn btn-info">
+								<i class="">A</i>
+							</a>
+							<a href="" class="btn btn-success">
+								<i class="">B</i>
+							</a>
+							<a href="" class="btn btn-danger">
+								<i class="">C</i>
+							</a>
+							<a href="" class="btn btn-warning">
+								<i class="">D</i>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<h5 class="text-write text-thin"><strong>Popular</strong> categories</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">PHP Scripts</a></li>
+							<li><a href="#">iOS App Templates</a></li>
+							<li><a href="#">Android App Templates</a></li>
+							<li><a href="#">Wordpress Plugins</a></li>
+							<li><a href="#">Wordpress Themes</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<h5 class="text-write text-thin"><strong>More</strong> info</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">About Codester</a></li>
+							<li><a href="#">Sell your work</a></li>
+							<li><a href="#">Affiliate program</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<h5 class="text-write text-thin"><strong>Help</strong> & support</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container-fluid footer2">
+			<div class="container">
+				<div class="col-xs-8">
+					<ul class="list-inline">
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+						<li><a href="#">Member terms</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-4 text-right div_2">
+					<img src="img/dutchflag.png"/>
+					 Made in The Netherlands - Codester © 2017
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--footer end-->
+	
+	
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery-1.11.3.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+		$(function (){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+</script>
+</body>
+</html>
